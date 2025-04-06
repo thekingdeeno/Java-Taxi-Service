@@ -1,8 +1,9 @@
 package com.mypackage;
 import java.time.LocalDate;
+import enums.AccountType;
 
 public class User {
-    public int customerId;
+    public int id;
     public String fullName;
     public String gender;
     public String email;
@@ -14,16 +15,17 @@ public class User {
 
 
     public User(       
-        int customerId,
+        int id,
         String fullName,
         String gender,
         String email,
         LocalDate regDate,
         String homeTelNo,
         String mobileTelNo,
-        String address
+        String address,
+        AccountType accountType
     ) { 
-        this.customerId = customerId;
+        this.id = id;
         this.fullName = fullName;
         this.gender = gender; 
         this.email = email; 
@@ -31,5 +33,6 @@ public class User {
         this.homeTelNo = homeTelNo;
         this.mobileTelNo = mobileTelNo;
         this.address = address;
+        this.accountType = accountType;
     } 
 }

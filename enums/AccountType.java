@@ -1,4 +1,4 @@
-package com.mypackage;
+package enums;
 
 public enum AccountType {
     DRIVER,
