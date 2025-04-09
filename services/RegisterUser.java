@@ -7,7 +7,7 @@ import repositories.UserService;
 
 public class RegisterUser {
     static Scanner input = new Scanner(System.in);
-    public static char[] main;
+    // public static char[] main;
     public static User main() {
 
         System.out.println("Welcome to Deeno Ride!");

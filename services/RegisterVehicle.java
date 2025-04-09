@@ -8,7 +8,7 @@ import repositories.DriverService;
 
 public class RegisterVehicle {
     static Scanner input = new Scanner(System.in);
-    public static void main(int userId){
+    public static Driver main(int userId){
 
         String make;
         String model;
@@ -32,5 +32,7 @@ public class RegisterVehicle {
         DriverService.addDriver(newDriver);
 
         System.out.println("New Driver Registered Successfully");
+
+        return newDriver;
     };
 };
