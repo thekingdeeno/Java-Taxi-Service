@@ -26,9 +26,9 @@ public class BookRide {
         System.out.println("Calculating ride fare, please wait...");
 
         
-        System.out.println("The price is £"+fare+". Do you want to proceed? (1 = yes / 0 = no)");
+        System.out.println("The price is £"+fare+". Do you want to proceed? (yes/no)");
 
-        if ( Integer.parseInt(input.nextLine()) == 1) {
+        if ((input.nextLine()).equals("yes")) {
             Order order = new Order(OrderService.fetchSize() + 1, userId, pickup, destination, fare, OrderStatus.PENDING, 0);
             OrderService.createOrder(order);
             System.out.println("Order booked successfully🚀");

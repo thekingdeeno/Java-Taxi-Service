@@ -16,4 +16,10 @@ public class UserService {
     public static void addUser(User newUser){
         users.add(newUser);
     };
+
+    public static void deleteUser(int userId){
+        System.out.println(users.size());
+        users.remove(userId - 1);
+        System.out.println(users.size());
+    };
 };

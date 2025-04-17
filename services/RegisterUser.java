@@ -28,6 +28,7 @@ public class RegisterUser {
             default:
             System.out.println("ERROR::===> Invalid account type selected");
             System.out.println("Please restart the process and choose a valid profile type");
+            System.exit(0);
                 break;
          }
 

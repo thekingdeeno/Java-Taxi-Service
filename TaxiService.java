@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import com.mypackage.User;
 
+import repositories.UserService;
 import services.BookRide;
 import services.ManageOffers;
 import services.RegisterUser;
@@ -33,6 +34,13 @@ public class TaxiService {
                 break;
         };
 
-        System.out.println("Thanks for using Deeno Ride...");
+        System.out.println("Thanks for using Deeno Ride, Do you want to delete your account? ('yes' or 'no'))");
+        String toDelete = input.nextLine();
+        if (toDelete.equals("yes")) {
+            UserService.deleteUser(newUser.id); 
+            System.out.println("Sad to see you go🥲, hope to see you again.👋🏼");
+        }else{
+            System.out.println("Alright byebye👋🏼");
+        }
     };
 };
